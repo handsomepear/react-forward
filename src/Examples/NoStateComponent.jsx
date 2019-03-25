@@ -9,7 +9,7 @@ const ListComponent  = props => {
   )
 }
 
-class NoState extends Component {
+class NoStateComponent extends Component {
   state = {
     list: [{id: 0, text: 'apple'},{id: 1, text: 'pear'},{id: 2, text: 'banana'}]
   }
@@ -23,7 +23,7 @@ class NoState extends Component {
 }
 
 
-export default NoState
+export default NoStateComponent
 
 
 
