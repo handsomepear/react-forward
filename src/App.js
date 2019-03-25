@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import NoStateComponent from './Examples/NoStateComponent'
 import SetState from './Examples/SetState'
 import Children from './Examples/Children'
@@ -8,6 +8,8 @@ import Base1 from './ForwardComponent/Base1'
 import MixinApp from './ForwardComponent/MixinExample'
 import Higher from './ForwardComponent/HigherComponent'
 import Higher1 from './ForwardComponent/HigherComponent1'
+import FunctionalChild from './ForwardComponent/FunctionalChild'
+import ContextExample from './ForwardComponent/ContextExample'
 
 class App extends Component {
   render() {
@@ -18,17 +20,19 @@ class App extends Component {
         {/*<SetState />*/}
 
         {/*<Children>*/}
-          {/*<p>1</p>*/}
-          {/*<p>2</p>*/}
-          {/*<p>3</p>*/}
+        {/*<p>1</p>*/}
+        {/*<p>2</p>*/}
+        {/*<p>3</p>*/}
         {/*</Children>*/}
         {/*<Base/>*/}
         {/*<Base1/>*/}
         {/*<MixinApp />*/}
-        <Higher1 />
+        {/*<Higher1 />*/}
+        {/*<FunctionalChild />*/}
+        <ContextExample/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

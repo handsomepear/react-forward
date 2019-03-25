@@ -40,7 +40,6 @@ const withRename = (rawName, newName) => {
         }
       }
       componentWillReceiveProps(nextProps, nextContext) {
-        console.log(nextProps)
         this.setState({
           [newName]: nextProps[rawName]
         })
