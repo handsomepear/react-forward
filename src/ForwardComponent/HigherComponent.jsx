@@ -1,6 +1,8 @@
 import React from 'react'
 import createReactClass from 'create-react-class'
 
+// 场景：当我们有多个事务都跟浏览器的宽度变化有关系 那么我们可以把浏览器变化的这部分逻辑处理抽取出来，余下的就各自处理各自的逻辑即可
+
 // 高阶组件是用来生成组件的
 const withWindowResize = RawComponent => {
   return class NewComponent extends React.Component {

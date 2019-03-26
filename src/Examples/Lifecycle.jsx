@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 
 
 class Lifecycle extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { counter: 1 }
+  }
+
   componentWillMount() {
   }
 
@@ -12,6 +17,7 @@ class Lifecycle extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
+    return nextState.counter <= 10;
   }
 
   componentWillUpdate(nextProps, nextState, nextContext) {
@@ -21,6 +27,18 @@ class Lifecycle extends Component {
   }
 
   componentWillUnmount() {
+  }
+  handleButtonClick = () => {
+    this.setState(prevState => {
+      return {counter: prevState.counter + 1}
+    })
+  }
+  render() {
+    return(
+      <div>
+        <button onClick={this.handleButtonClick}>{this.state.counter}</button>
+      </div>
+    )
   }
 
 }

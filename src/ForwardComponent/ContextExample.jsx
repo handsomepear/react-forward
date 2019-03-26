@@ -12,7 +12,7 @@ const CurrencyContext = React.createContext()
 class ContextExample extends Component {
   constructor(props) {
     super(props)
-    this.state = {currency: '￥'}
+    this.state = {currency: '1'}
   }
   render() {
     return (
@@ -24,9 +24,9 @@ class ContextExample extends Component {
                 return (
                   <li key={num}>
                     <CurrencyContext.Consumer>
-                      {(value) => {
+                      {(currency) => {
                         return (
-                          <ShowMoney value={num * 10} currency={value}/>
+                          <ShowMoney value={num * 10} currency={currency}/>
                         )
                       }}
                     </CurrencyContext.Consumer>

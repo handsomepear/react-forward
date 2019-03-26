@@ -53,6 +53,7 @@ class FunctionalChild extends Component {
     return (
       <div>
         <CurrencyWrapper>
+          {/*函数式子组件 可接受参数*/}
           {(currency) => <ShowMoney value={200} currency={currency} />}
         </CurrencyWrapper>
         <FetchWrapper url="https://api.github.com/users/gaearon/gists">

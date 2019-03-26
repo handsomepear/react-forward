@@ -10,6 +10,8 @@ import Higher from './ForwardComponent/HigherComponent'
 import Higher1 from './ForwardComponent/HigherComponent1'
 import FunctionalChild from './ForwardComponent/FunctionalChild'
 import ContextExample from './ForwardComponent/ContextExample'
+import ContextExample1 from './ForwardComponent/ContextExample1'
+import Lifecycle from './Examples/Lifecycle'
 
 class App extends Component {
   render() {
@@ -18,7 +20,7 @@ class App extends Component {
         {/*<NoStateComponent />*/}
         {/*<hr />*/}
         {/*<SetState />*/}
-
+        {/*<Lifecycle/>*/}
         {/*<Children>*/}
         {/*<p>1</p>*/}
         {/*<p>2</p>*/}
@@ -29,8 +31,10 @@ class App extends Component {
         {/*<MixinApp />*/}
         {/*<Higher1 />*/}
         {/*<FunctionalChild />*/}
-        <ContextExample/>
+        {/*<ContextExample/>*/}
+        <ContextExample1/>
       </div>
+
     )
   }
 }
