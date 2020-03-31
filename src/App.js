@@ -15,6 +15,7 @@ import Lifecycle from './Examples/Lifecycle'
 import StateHook from './Hooks/Hooks'
 
 
+console.log('change 1')
 
 class App extends Component {
   render() {

@@ -25,6 +25,8 @@ function StateHook() {
   )
 }
 
+console.log('change 2')
+
 
 export default StateHook
 
