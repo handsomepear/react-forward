@@ -12,6 +12,9 @@ import FunctionalChild from './ForwardComponent/FunctionalChild'
 import ContextExample from './ForwardComponent/ContextExample'
 import ContextExample1 from './ForwardComponent/ContextExample1'
 import Lifecycle from './Examples/Lifecycle'
+import StateHook from './Hooks/Hooks'
+
+
 
 class App extends Component {
   render() {
@@ -21,18 +24,20 @@ class App extends Component {
         {/*<hr />*/}
         {/*<SetState />*/}
         {/*<Lifecycle/>*/}
-        {/*<Children>*/}
-        {/*<p>1</p>*/}
-        {/*<p>2</p>*/}
-        {/*<p>3</p>*/}
-        {/*</Children>*/}
+        {/*<Children>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </Children>*/}
         {/*<Base/>*/}
         {/*<Base1/>*/}
         {/*<MixinApp />*/}
         {/*<Higher1 />*/}
-        {/*<FunctionalChild />*/}
-        {/*<ContextExample/>*/}
+        <FunctionalChild />
+        <ContextExample/>
         <ContextExample1/>
+
+        {/*<StateHook/>*/}
       </div>
 
     )

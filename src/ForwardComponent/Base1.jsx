@@ -21,7 +21,7 @@ const UnOrderList = function ({ loading, gists }) {
     </ul>
   )
 }
-
+console.log(UnOrderList.prototype)
 // 业务逻辑
 class CommitContainer extends Component {
   constructor(props) {

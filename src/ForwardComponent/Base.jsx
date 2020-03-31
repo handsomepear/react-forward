@@ -44,5 +44,7 @@ class Base extends Component {
   }
 }
 
+console.log(Base.prototype)
+
 
 export default Base

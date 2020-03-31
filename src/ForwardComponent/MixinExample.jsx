@@ -9,12 +9,14 @@ const WindowResizeMixin = {
     return { innerWidth: window.innerWidth }
   },
   componentDidMount() {
+    // console.log(456)
     window.addEventListener('resize', this.handleResize)
   },
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize)
   },
   handleResize() {
+    console.log(123)
     this.setState({ innerWidth: window.innerWidth })
   }
 }

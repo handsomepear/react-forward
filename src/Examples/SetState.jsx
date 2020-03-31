@@ -32,12 +32,15 @@ class SetState extends Component {
   }*/
   toggleButton = () => {
     // 最佳实践
-    this.setState(prevState => {
-      return { counter: prevState.counter + 1 }
-    })
-    this.setState(prevState => {
-      return { counter: prevState.counter + 1 }
-    })
+    setTimeout(() => {
+      this.setState(prevState => {
+        return { counter: prevState.counter + 1 }
+      })
+      this.setState(prevState => {
+        return { counter: prevState.counter + 1 }
+      })
+      console.log(this.state.counter)
+    }, 0)
   }
 
   render() {
